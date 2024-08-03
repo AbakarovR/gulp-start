@@ -1,0 +1,128 @@
+.marketplace-block {
+  &__container {
+    display: flex;
+    background-color: black;
+    overflow: hidden;
+    max-width: 100%;
+
+    @media (min-width: 320px) {
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+
+    @media (min-width: 768px) {
+      padding-top: 45px;
+      padding-bottom: 45px;
+    }
+
+    @media (min-width: 1728px) {
+      padding-top: 56px;
+      padding-bottom: 56px;
+    }
+  }
+
+  @keyframes slide-animation-one {
+    from {
+      transform: translateX(0%);
+    }
+
+    to {
+      transform: translateX(-200%);
+    }
+  }
+
+  @keyframes slide-animation-two {
+    from {
+      transform: translateX(20%);
+    }
+
+    to {
+      transform: translateX(-200%);
+    }
+  }
+
+  @keyframes slide-animation-three {
+    from {
+      transform: translateX(120%);
+    }
+
+    to {
+      transform: translateX(-200%);
+    }
+  }
+
+  &__list-one {
+    @include clear-list;
+
+    display: flex;
+    animation-name: slide-animation-one;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    @media (min-width: 320px) {
+      gap: 40px;
+    }
+
+    @media (min-width: 768px) {
+      gap: 195px;
+    }
+
+    @media (min-width: 1728px) {
+      animation: none;
+      justify-content: space-between;
+    }
+  }
+
+  &__list-two {
+    @include clear-list;
+
+    display: flex;
+    animation-name: slide-animation-two;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    @media (min-width: 320px) {
+      gap: 40px;
+    }
+
+    @media (min-width: 768px) {
+      gap: 195px;
+    }
+
+    @media (min-width: 1728px) {
+      display: none;
+    }
+  }
+
+  &__list-three {
+    @include clear-list;
+
+    display: flex;
+    animation-name: slide-animation-three;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    @media (min-width: 320px) {
+      gap: 40px;
+    }
+
+    @media (min-width: 768px) {
+      gap: 195px;
+    }
+
+    @media (min-width: 1728px) {
+      display: none;
+    }
+  }
+
+  &__image {
+    height: 18px;
+
+    @media (min-width: 768px) {
+      height: 40px;
+    }
+  }
+}
