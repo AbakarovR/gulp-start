@@ -1,0 +1,169 @@
+.popular {
+  &__container {
+    margin-top: 57px;
+    position: relative;
+
+    @media (min-width: 768px) {
+      display: flex;
+      margin-top: 93px;
+    }
+
+    @media (min-width: 1728px) {
+      margin-top: 159px;
+    }
+  }
+
+    &__wrapper-title {
+    margin-bottom: 34px;
+
+    @media (min-width: 768px) {
+      max-width: 290px;
+    }
+
+    @media (min-width: 1728px) {
+      margin-right: 48px;
+    }
+  }
+
+
+  &__title {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    text-transform: capitalize;
+
+    &::before {
+      display: inline-block;
+      width: 47px;
+      height: 3px;
+      background-color: #000;
+      margin-right: 22px;
+      transform: translateY(-6px);
+      content: '';
+    }
+  }
+
+  &__text {
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 54px;
+  }
+
+  &__description {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.75);
+    margin-top: 24px;
+    text-transform: capitalize;
+  }
+
+  &__show-all {
+    border: 0;
+    color: #FFFFFF;
+    background-color: #000;
+    margin: 0 auto;
+
+    @media (max-width: 767px) {
+      font-size: 20px;
+      line-height: 31px;
+      width: 300px;
+      padding: 12px 43px;
+    }
+
+    @media (min-width: 768px) {
+      margin: 0;
+      margin-top: 27px;
+    }
+
+    &--mobile {
+      position: relative;
+      z-index: 1;
+
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+
+    &--tablet {
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+  }
+
+  &__product-list {
+    @include clear-list;
+    display: flex;
+    gap: 67px;
+    padding: 0 20px;
+  }
+
+  &__slider-pagination {
+
+    @media (max-width: 767px) {
+      margin-bottom: 30px;
+      margin-top: 18px;
+    }
+
+    @media (min-width: 768px) {
+      margin-top: 30px;
+    }
+
+    @media (min-width: 1728px) {
+      margin-top: 50px;
+    }
+  }
+
+  &__swiper {
+    overflow: hidden;
+    border-radius: 25px;
+  }
+
+  &__swiper-container {
+    width: 100%;
+
+    @media (min-width: 768px) {
+      min-width: 300px;
+    }
+  }
+
+  &__arrow {
+    @include clear-button;
+
+    @media (min-width: 768px) {
+      background-image: url("../img/popular-arrow-slider.svg");
+      background-repeat: no-repeat;
+      width: 40px;
+      height: 27px;
+      align-self: center;
+      cursor: pointer;
+    }
+
+    &--right {
+
+      @media (min-width: 768px) {
+        transform: rotate(180deg);
+        margin-left: 21px;
+      }
+
+      @media (min-width: 1728px) {
+        transform: rotate(180deg);
+        margin-left: 50px;
+      }
+    }
+
+    &--left {
+
+      @media (min-width: 768px) {
+        margin-right: 21px;
+        margin-left: 31px;
+      }
+
+      @media (min-width: 1728px) {
+        margin-right: 50px;
+      }
+    }
+  }
+}

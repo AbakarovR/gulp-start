@@ -47,32 +47,33 @@
         </nav>
 
         <div class="header__user-actions">
-          <button class="header__button">
+          <button type="button" class="header__button">
             <img src="img/search_icon.svg" alt="Поиск">
           </button>
 
-          <button class="header__button">
-            <span class="header__item-counter">77</span>
+          <button type="button" class="header__button">
+            <span class="header__item-counter">0</span>
             <img src="img/shop_icon.svg" alt="Корзина">
           </button>
 
-          <button class="header__button header__button--hidden">
+          <button type="button" class="header__button header__button--hidden">
             <img src="img/menu_icon.svg" alt="Меню">
           </button>
 
-          <button class="header__button header__button--closed">
+          <button type="button" class="header__button header__button--closed">
             <img src="img/closed_icon.svg" alt="Закрыть меню">
           </button>
         </div>
+
       </div>
     </header>
 
     <main class="main">
       <section class="hero">
         <div class="hero__container container">
+
           <div class="hero__headline-block">
             <div class="hero__title-wrapper">
-
               <h1 class="hero__title">
                 <span>Найди Свои</span>
                 <span>Идеальные</span>
@@ -85,8 +86,8 @@
               </p>
             </div>
 
-            <button class="hero__button">
-              За покупками
+            <button type="submit" class="hero__button">
+              За Покупками
             </button>
           </div>
 
@@ -94,6 +95,244 @@
             <img class="hero__product-image" src="img/sneaker-image.png" alt="Кроссовки">
             <span class="hero__product-name">Trendy Slick Pro</span>
             <span class="hero__product-price">3999 ₽</span>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="marketplace-block">
+        <div class="marketplace-block__container container">
+
+          <ul class="marketplace-block__list-one">
+            <li class="marketplace-block__item">
+              <a href="#">
+                <img class="marketplace-block__image" src="img/ozon-logo.svg" alt="Логотип Ozon">
+              </a>
+            </li>
+
+            <li class="marketplace-block__item">
+              <a href="#">
+                <img class="marketplace-block__image" src="img/wildberries-logo.svg" alt="Логотип Wildberries">
+              </a>
+            </li>
+
+            <li class="marketplace-block__item">
+              <a href="#">
+                <img class="marketplace-block__image" src="img/sbermarket-logo.svg" alt="Логотип Sbermarket">
+              </a>
+            </li>
+
+            <li class="marketplace-block__item">
+              <a href="#">
+                <img class="marketplace-block__image" src="img/yandex-market-logo.svg" alt="Логотип Yandex-Market">
+              </a>
+            </li>
+          </ul>
+
+          <ul class="marketplace-block__list-two">
+            <li class="marketplace-block__item">
+              <a href="#">
+                <img class="marketplace-block__image" src="img/ozon-logo.svg" alt="Логотип Ozon">
+              </a>
+            </li>
+
+            <li class="marketplace-block__item">
+              <a href="#">
+                <img class="marketplace-block__image" src="img/wildberries-logo.svg" alt="Логотип Wildberries">
+              </a>
+            </li>
+
+            <li class="marketplace-block__item">
+              <a href="#">
+                <img class="marketplace-block__image" src="img/sbermarket-logo.svg" alt="Логотип Sbermarket">
+              </a>
+            </li>
+
+            <li class="marketplace-block__item">
+              <a href="#">
+                <img class="marketplace-block__image" src="img/yandex-market-logo.svg" alt="Логотип Yandex-Market">
+              </a>
+            </li>
+          </ul>
+
+          <ul class="marketplace-block__list-three">
+            <li class="marketplace-block__item">
+              <a href="#">
+                <img class="marketplace-block__image" src="img/ozon-logo.svg" alt="Логотип Ozon">
+              </a>
+            </li>
+
+            <li class="marketplace-block__item">
+              <a href="#">
+                <img class="marketplace-block__image" src="img/wildberries-logo.svg" alt="Логотип Wildberries">
+              </a>
+            </li>
+
+            <li class="marketplace-block__item">
+              <a href="#">
+                <img class="marketplace-block__image" src="img/sbermarket-logo.svg" alt="Логотип Sbermarket">
+              </a>
+            </li>
+
+            <li class="marketplace-block__item">
+              <a href="#">
+                <img class="marketplace-block__image" src="img/yandex-market-logo.svg" alt="Логотип Yandex-Market">
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </section>
+
+      <section class="popular">
+        <div class="popular__container container">
+          <div class="popular__wrapper-title">
+            <h2 class="popular__title">Сегодня в тренде</h2>
+            <span class="popular__text">Самые</span>
+            <span class="popular__text">Популярные</span>
+            <p class="popular__description">Посмотрите, что чаще всего покупают у нас</p>
+            <button class="popular__show-all popular__show-all--tablet show-all">Показать Все</button>
+          </div>
+
+          <button type="button" class="popular__arrow popular__arrow--left"></button>
+
+          <div class="popular__swiper-container">
+            <div class="popular__swiper">
+              <ul class="popular__product-list swiper-wrapper">
+
+                <li class="product-card product-card--popular swiper-slide">
+                  <img class="product-card__img product-card__img--popular" src="img/popular_sneakershoe-1.png" alt="Кроссовки №1">
+
+                  <h3 class="product-card__name">
+                    Running sport shoe
+                  </h3>
+
+                  <div class="product-card__price-wrapper">
+                    <span class="product-card__price product-card__price--popular">3999 ₽</span>
+                    <button type="button" class="product-card__arrow-icon product-card__arrow-icon--popular"></button>
+                  </div>
+                </li>
+
+                <li class="product-card product-card--popular swiper-slide">
+                  <img class="product-card__img product-card__img--popular" src="img/popular_sneakershoe-2.png" alt="Кроссовки №2">
+
+                  <h3 class="product-card__name">
+                    Running sport shoe
+                  </h3>
+
+                  <div class="product-card__price-wrapper">
+                    <span class="product-card__price product-card__price--popular">3999 ₽</span>
+                    <button type="button" class="product-card__arrow-icon product-card__arrow-icon--popular"></button>
+                  </div>
+                </li>
+
+                <li class="product-card product-card--popular swiper-slide">
+                  <img class="product-card__img product-card__img--popular" src="img/popular_sneakershoe-3.png" alt="Кроссовки №3">
+
+                  <h3 class="product-card__name">
+                    Running sport shoe
+                  </h3>
+
+                  <div class="product-card__price-wrapper">
+                    <span class="product-card__price product-card__price--popular">3999 ₽</span>
+                    <button type="button" class="product-card__arrow-icon product-card__arrow-icon--popular"></button>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+            <div class="popular__slider-pagination slider-pagination">
+              <button type="button" class="slider-pagination__button"></button>
+              <button type="button" class="slider-pagination__button slider-pagination__button--big"></button>
+              <button type="button" class="slider-pagination__button"></button>
+            </div>
+
+          </div>
+          <button type="button" class="popular__arrow popular__arrow--right"></button>
+          <button class="popular__show-all popular__show-all--mobile show-all">
+            Показать Все
+          </button>
+        </div>
+      </section>
+
+      <section class="banners">
+        <div class="container">
+          <div class="banners__swiper">
+
+            <div class="banners__pagination slider-pagination slider-pagination--white"></div>
+            <button type="button" class="banners__arrow banners__arrow--left"></button>
+            <button type="button" class="banners__arrow banners__arrow--right"></button>
+
+            <ul class="banners__list swiper-wrapper">
+
+              <li class="banners__item swiper-slide">
+                <div class="banners__container">
+                  <div class="banners__slider">
+                    <div class="banners__box banner">
+                      <h2 class="banner__title">Ты готов<br>проложить свой путь?</h2>
+                      <a href="#" class="banner__button button button--white">См Все</a>
+                      <div class="banner__sneakershoe-wrapper">
+                        <a href="#" class="banner__sneakershoe">
+                          <img class="banner__sneakershoe-img" src="img/sneakershoe_banner-first.png" alt="Sneakershoe">
+                        </a>
+                        <a href="#" class="banner__sneakershoe">
+                          <img class="banner__sneakershoe-img" src="img/sneakershoe_banner-second.png" alt="Sneakershoe">
+                        </a>
+                        <a href="#" class="banner__sneakershoe">
+                          <img class="banner__sneakershoe-img" src="img/sneakershoe_banner-third.png" alt="Sneakershoe">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="banners__item swiper-slide">
+                <div class="banners__container banners__container--blue">
+                  <div class="banners__slider">
+                    <div class="banners__box banner">
+                      <h2 class="banner__title">Ты готов<br>проложить свой путь?</h2>
+                      <a href="#" class="banner__button button button--white">См Все</a>
+                      <div class="banner__sneakershoe-wrapper">
+                        <a href="#" class="banner__sneakershoe">
+                          <img class="banner__sneakershoe-img" src="img/sneakershoe_banner-first.png" alt="Sneakershoe">
+                        </a>
+                        <a href="#" class="banner__sneakershoe">
+                          <img class="banner__sneakershoe-img" src="img/sneakershoe_banner-second.png" alt="Sneakershoe">
+                        </a>
+                        <a href="#" class="banner__sneakershoe">
+                          <img class="banner__sneakershoe-img" src="img/sneakershoe_banner-third.png" alt="Sneakershoe">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="banners__item swiper-slide">
+                <div class="banners__container banners__container--green">
+                  <div class="banners__slider">
+                    <div class="banners__box banner">
+                      <h2 class="banner__title">Ты готов<br>проложить свой путь?</h2>
+                      <a href="#" class="banner__button button button--white">См Все</a>
+                      <div class="banner__sneakershoe-wrapper">
+                        <a href="#" class="banner__sneakershoe">
+                          <img class="banner__sneakershoe-img" src="img/sneakershoe_banner-first.png" alt="Sneakershoe">
+                        </a>
+                        <a href="#" class="banner__sneakershoe">
+                          <img class="banner__sneakershoe-img" src="img/sneakershoe_banner-second.png" alt="Sneakershoe">
+                        </a>
+                        <a href="#" class="banner__sneakershoe">
+                          <img class="banner__sneakershoe-img" src="img/sneakershoe_banner-third.png" alt="Sneakershoe">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
           </div>
         </div>
       </section>
@@ -106,15 +345,20 @@
           </h2>
 
           <div class="best-selling__gender-swap">
-            <button class="best-selling__button best-selling__button--black-button">Мужские</button>
-            <button class="best-selling__button">Женские</button>
+            <button type="button" class="best-selling__button best-selling__button--black-button">
+              Мужские
+            </button>
+
+            <button type="button" class="best-selling__button">
+              Женские
+            </button>
           </div>
 
           <div class="best-selling__product-wrapper">
             <div class="best-selling__product best-selling__product--big">
               <div class="product product--big product--hot-icon">
-                <img class="product__image" src="img/best-selling-sneaker-1.png" alt="Кроссовки №1">
 
+                <img class="product__image" src="img/best-selling-sneaker-1.png" alt="Кроссовки №1">
                 <span class="product__name">
                   Slick formal sneaker shoe
                 </span>
@@ -122,15 +366,16 @@
                 <div class="product__price-wrapper">
                   <span class="product__price">2999 ₽</span>
                   <span class="product__old-price">4999 ₽</span>
-                  <button class="product__button product__button--big"></button>
+                  <button type="button" class="product__button product__button--big"></button>
                 </div>
+
               </div>
             </div>
 
             <div class="best-selling__product best-selling__product--small">
-              <div class="product">
-                <img class="product__image" src="img/best-selling-sneaker-2.png" alt="Кроссовки №2">
+              <div class="product product--new-icon">
 
+                <img class="product__image" src="img/best-selling-sneaker-2.png" alt="Кроссовки №2">
                 <span class="product__name">
                   Slick sneaker shoe
                 </span>
@@ -138,15 +383,16 @@
                 <div class="product__price-wrapper">
                   <span class="product__price">2999 ₽</span>
                   <span class="product__old-price">3999 ₽</span>
-                  <button class="product__button product__button--small"></button>
+                  <button type="button" class="product__button product__button--small"></button>
                 </div>
+
               </div>
             </div>
 
             <div class="best-selling__product best-selling__product--small">
-              <div class="product product--new-icon">
-                <img class="product__image" src="img/best-selling-sneaker-3.png" alt="Кроссовки №3">
+              <div class="product">
 
+                <img class="product__image" src="img/best-selling-sneaker-3.png" alt="Кроссовки №3">
                 <span class="product__name">
                   Slick canvas shoe
                 </span>
@@ -154,17 +400,108 @@
                 <div class="product__price-wrapper">
                   <span class="product__price">2999 ₽</span>
                   <span class="product__old-price">3999 ₽</span>
-                  <button class="product__button product__button--small"></button>
+                  <button type="button" class="product__button product__button--small"></button>
                 </div>
+
               </div>
             </div>
           </div>
 
-          <button class="best-selling__show-all">
-            Показать все
+          <button type="submit" class="best-selling__show-all">
+            Показать Все
           </button>
+
         </div>
       </section>
+
+      <section class="reviews">
+        <div class="reviews__container container">
+          <h2 class="reviews__title">Отзывы <span>О Кроссах</span></h2>
+          <div class="reviews__wrapper">
+            <ul class="reviews__list">
+
+              <li class="reviews__item">
+                <img class="reviews__avatar" src="img/reviews_ava-joshi.png" alt="Photo Ava Joshi">
+                <h3 class="reviews__name">Ava Joshi</h3>
+                <div class="reviews__rating">
+                  <div class="reviews__rating-star"></div>
+                  <div class="reviews__rating-star"></div>
+                  <div class="reviews__rating-star"></div>
+                  <div class="reviews__rating-star"></div>
+                  <div class="reviews__rating-star reviews__rating-star--half"></div>
+                </div>
+                <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.</p>
+              </li>
+
+              <li class="reviews__item">
+                <img class="reviews__avatar" src="img/reviews_otis-bisnoy.png" alt="Photo Otis Bisnoy">
+                <h3 class="reviews__name">Otis Bisnoy</h3>
+                <div class="reviews__rating">
+                  <div class="reviews__rating-star"></div>
+                  <div class="reviews__rating-star"></div>
+                  <div class="reviews__rating-star"></div>
+                  <div class="reviews__rating-star reviews__rating-star--half"></div>
+                </div>
+                <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.</p>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__content">
+            <div class="footer__section">
+              <a class="footer__logo">
+                <img src="img/logo-white.svg" alt="Логотип">
+              </a>
+              <p class="footer__slogan">
+                Какие мы крутые, у нас лучшие кроссы<br>и ваще... всё.
+              </p>
+              <ul class="footer__social social">
+                <li class="social__item">
+                  <a href="#">
+                    <img src="img/tg_icon-white.svg" alt="tg.com" width="21px" height="18px">
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#">
+                    <img src="img/vk_icon-white.svg" alt="vk.com" width="24px" height="16px">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__links">
+              <p class="footer__menu-name">Быстрые ссылки</p>
+              <ul class="footer__menu">
+                <li class="footer__menu-item">
+                  <a>Главная</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#">Магазин</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__subscribe-wrapper">
+              <p class="footer__subscribe-description">Подпишись на наши акции</p>
+              <form class="footer__subscribe">
+                <input type="email" placeholder="Введи Email..." class="footer__email">
+                <button type="submit" class="footer__button-subscribe">Подписаться</button>
+              </form>
+            </div>
+          </div>
+          <p class="footer__rights">www.slick.com©all right reserve</p>
+        </div>
+      </footer>
+
     </main>
+    <script src="js/script.js" defer type="module"></script>
   </body>
 </html>
