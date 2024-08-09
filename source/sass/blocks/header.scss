@@ -50,7 +50,7 @@
     }
 
     &--showed {
-      @media (max-width: 375px) {
+      @media (max-width: 768px) {
         display: flex;
         flex-direction: column;
         padding: 15px 10px 20px 20px;
@@ -179,16 +179,10 @@
       @media (min-width: 768px) {
         display: none;
       }
-
-      @media (max-width: 375px) {
-        display: none;
-      }
     }
 
     &--closed {
-      @media (min-width: 376px) {
         display: none;
-      }
     }
   }
 
